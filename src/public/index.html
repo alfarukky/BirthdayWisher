@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Birthday Notification App</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__text">Birthday App</div>
+    </nav>
+    <main>
+      <h1 class="heading--1">
+        Please ensure all fields are filled out to receive a birthday
+        notification
+      </h1>
+      <div class="form-card">
+        <form
+          action="/addUser"
+          method="POST"
+          class="form-card__field"
+          id="notificationForm"
+        >
+          <label class="form-card__label" for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            class="form-card__input"
+            name="username"
+          />
+          <span class="error-message" id="usernameError"></span>
+          <br />
+          <label class="form-card__label" for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            class="form-card__input"
+            name="email"
+          />
+          <span class="error-message" id="emailError"></span>
+          <br />
+          <label class="form-card__label" for="dob">Date of Birth:</label>
+          <input type="date" id="dob" class="form-card__input" name="dob" />
+          <span class="error-message" id="dobError"></span>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+        <div id="ackMessage" class="ack-message"></div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

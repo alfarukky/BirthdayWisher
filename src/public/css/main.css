@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  background-color: #f7f7f7;
+}
+
+.nav {
+  background-color: rgba(59, 130, 246);
+  padding: 1.5rem 0;
+  width: 100%;
+  text-align: left;
+}
+
+.nav__text {
+  font-size: 2rem;
+  font-style: italic;
+  text-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.2);
+  padding-left: 2rem;
+  color: #fff;
+}
+
+.heading--1 {
+  font-size: 1.6rem;
+  text-shadow: 1rem 2rem 2rem rgba(0, 0, 0, 0.1);
+  color: #333;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.form-card {
+  margin-top: 5rem;
+  background-color: #fff;
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.1);
+  width: 80rem;
+  padding: 4rem;
+  border-radius: 8px;
+  max-width: 400rem;
+  margin: 4rem auto;
+}
+
+.form-card__field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-card__label {
+  color: #777;
+  font-weight: 700;
+}
+
+.form-card__input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: all 0.3s ease-in;
+}
+.form-card__input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-card button {
+  cursor: pointer;
+  padding: 1.2rem;
+  border: none;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-card button:hover {
+  scale: 1.02;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+.ack-message {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+  display: none;
+}
